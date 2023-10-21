@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+#logo-name{
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+    font-size: 40px;
+    margin: 12px;
+    animation: slidein 3s;
+}
+#logo-img img{
+    width: 50px;
+    margin: 12px;
+}
+#logo{
+    display: flex;
+}
+#main-div{
+    display: flex;
+    background: linear-gradient(rgba(255, 255, 255, 0.501), rgba(255, 0, 0, 0.523)), url(assest/background.jpg) ;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-position: center;
+}
+main{
+    width: 75%;
+}
+.section-heading{
+    padding-left: 35%;
+    margin: 12px;
+    font-weight: 500;
+    font-size: 40px;
+    color: rgb(236, 25, 25);
+}
+.section-content{
+    display: flex;
+    margin-left: 32px;
+    margin-right: 14px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cover-img{
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+.cover-img img{
+    width: 200px;
+    height: 200px;
+}
+.hover-effect:hover div{
+    opacity: 0.3;
+    transform: scale(0.8);
+}
+.hover-effect div:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+.play-song{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 34px;
+    text-align: center;
+}
+.song-img img{
+    width: 78%;
+}
+.song-img{
+    width: 120px;
+    position: absolute;
+    left: 14px;
+    top: 23px;
+    overflow: hidden;    
+}
+.play-song h3,h4{
+    text-align: left;
+    color: black;
+    margin-left: 96px;
+    margin-top: 56px;
+}
+.play-song h4{
+    margin-right: 56px;
+}
+.play-button{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 21px;
+    text-align: left;
+    padding-top: 33px;
+    font-size: x-large;
+    color: black;
+    padding-left: 37px;
+}
+.play-song:hover{
+    box-shadow: 0 0 20px 2px black;
+    background-color: rgba(128, 128, 128, 0.51);
+}
+.play-song:hover .play-button{
+    display: block;
+}
